@@ -1,0 +1,36 @@
+.screen {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background: #4f27bf;
+}
+
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.screen__image {
+  width: 70%;
+  height: 29vh;
+}
+
+.screen__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.4vw;
+  line-height: 61px;
+  color: #ffffff;
+  margin: 60px 0 0 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .screen__title {
+    font-size: 50px;
+  }
+}
