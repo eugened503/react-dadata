@@ -17,21 +17,20 @@ const App: FC = () => {
 
   return (
     <BrowserRouter>
-      {/* {isScreen && <Screen />} */}
+      {isScreen && <Screen />}
       <div className="page">
-       {/* <Screen />  */}
-      <Header />
-       <main className="content">
-         <Menu /> 
-         <Switch>
-          <Route exact path="/">
-            <News />
-          </Route>
-          <Route exact path="/address">
-            <SearchContainer />
-          </Route>
-        </Switch> 
-      </main> 
+        <Header />
+        <main className="content">
+          <Menu />
+          <Switch>
+            <Route exact path="/">
+              <News />
+            </Route>
+            <Route exact path="/address">
+              <SearchContainer />
+            </Route>
+          </Switch>
+        </main>
       </div>
     </BrowserRouter>
   );
